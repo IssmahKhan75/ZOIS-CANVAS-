@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sign="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/bg2"
+    android:layout_height="match_parent">
+
+
+    <com.kyanogen.signatureview.SignatureView
+        android:id="@+id/signature_view"
+        android:layout_width="370dp"
+        android:layout_height="653dp"
+        android:layout_above="@+id/optionHolder"
+        android:layout_marginLeft="10dp"
+        sign:enableSignature="true"
+        sign:penColor="#000000"
+        sign:penSize="5dp"
+        android:background="@color/bg_mode"/>
+
+
+
+<LinearLayout
+    android:id="@+id/optionHolder"
+    android:orientation="horizontal"
+    android:layout_alignParentBottom="true"
+    android:gravity="center"
+    android:background="@color/bg_mode"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_margin="4dp"
+        android:gravity="end"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageButton
+            android:id="@+id/btnUndo"
+            android:layout_width="5dp"
+            android:layout_height="52dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:contentDescription="UNDO"
+            android:scaleType="fitCenter"
+            android:src="@drawable/undo1"
+            android:onClick="showSavePopupMenu"/>
+
+
+        <ImageButton
+            android:id="@+id/btnRedo"
+            android:layout_width="5dp"
+            android:layout_height="52dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:contentDescription="REDO"
+            android:scaleType="fitCenter"
+            android:src="@drawable/redo"
+            android:onClick="showSavePopupMenu" />
+
+
+        <ImageButton
+            android:id="@+id/btneraser"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:contentDescription="ERASER"
+            android:scaleType="fitCenter"
+            android:src="@drawable/dustbin" />
+
+        <ImageButton
+            android:id="@+id/btncolor"
+            android:layout_width="0dp"
+            android:layout_height="59dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:contentDescription="COLOR"
+            android:scaleType="fitCenter"
+            android:src="@drawable/color"/>
+
+        <ImageButton
+            android:id="@+id/btnsave"
+            android:layout_width="5dp"
+            android:layout_height="52dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:contentDescription="SAVE"
+            android:scaleType="fitCenter"
+            android:src="@drawable/save"
+            android:onClick="showSavePopupMenu" />
+
+
+    </LinearLayout>
+</LinearLayout>
+    <LinearLayout
+        android:id="@+id/option"
+        android:orientation="horizontal"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:background="@color/bg_mode"
+        android:layout_width="415dp"
+        android:layout_height="wrap_content">
+
+
+        <ImageButton
+            android:id="@+id/btnbrush"
+            android:layout_width="80dp"
+            android:layout_height="57dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:contentDescription="brush"
+            android:scaleType="fitCenter"
+            android:src="@drawable/brushicon" />
+        <ImageButton
+            android:id="@+id/btnshape"
+            android:layout_width="80dp"
+            android:layout_height="57dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:contentDescription="brush"
+            android:scaleType="fitCenter"
+            android:src="@drawable/disable2" />
+        <ImageButton
+            android:id="@+id/btnmark"
+            android:layout_width="80dp"
+            android:layout_height="57dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:contentDescription="tick
+"
+            android:scaleType="fitCenter"
+            android:src="@drawable/tick" />
+        </LinearLayout>
+
+
+
+</RelativeLayout>

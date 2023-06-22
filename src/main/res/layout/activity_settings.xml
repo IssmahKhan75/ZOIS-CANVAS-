@@ -1,0 +1,72 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="800dp"
+    android:layout_height="match_parent"
+    xmlns:tool="http://schemas.android.com/tools"
+    tools:context=".SettingsActivity"
+    android:background="@color/bg_mode">
+
+
+
+    <TextView
+        android:id="@+id/darktext"
+        android:layout_width="1000dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/black_han_sans"
+        android:gravity="center_vertical"
+        android:text="DARK/LIGHt"
+        android:textColor="@color/text_color"
+        android:textSize="25sp" />
+
+    <Switch
+        android:id="@+id/darkModeSwitch"
+        android:layout_width="190dp"
+        android:layout_height="86dp"
+        android:layout_below="@id/darktext"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/black_han_sans"
+        android:textColor="@color/text_color"
+        android:textOff="OFF"
+        android:textOn="ON"
+        android:textSize="40sp"
+        android:thumbTint="@color/changethumb"
+        tool:ignore="UseSwitchCompatOrMaterialXML" />
+
+    <Button
+        android:id="@+id/darkmode"
+        android:layout_width="90dp"
+        android:layout_height="85dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="115dp"
+        android:background="@color/black"
+        android:contentDescription="dark"
+        android:foreground="@drawable/dark" />
+
+    <TextView
+        android:id="@+id/abouttext"
+        android:layout_width="1000dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/darkModeSwitch"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/black_han_sans"
+        android:gravity="center_vertical"
+        android:textColor="@color/text_color"
+        android:text="For About Click 'i' icon"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/aboutButton"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_below="@id/abouttext"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="26dp"
+        android:contentDescription="About"
+        android:foreground="@drawable/i"
+        app:iconTint="@color/black" />
+
+
+</RelativeLayout>

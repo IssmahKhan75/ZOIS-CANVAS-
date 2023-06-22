@@ -1,0 +1,123 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="410dp"
+    android:layout_height="300dp"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Brush Settings"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btnFlatBrush"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:scaleType="centerCrop"
+                android:backgroundTint="@color/bg_mode"
+                android:contentDescription="flat"
+                android:src="@drawable/brush"/>
+
+
+
+            <ImageButton
+                android:id="@+id/btnRoundBrush"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:scaleType="centerCrop"
+                android:backgroundTint="@color/bg_mode"
+                android:contentDescription="round"
+                android:src="@drawable/brush" />
+
+            <ImageButton
+                android:id="@+id/btnpencil"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:scaleType="centerCrop"
+                android:backgroundTint="@color/bg_mode"
+                android:contentDescription="pencil"
+                android:src="@drawable/pencil" />
+            <ImageButton
+                android:id="@+id/btneraser"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:scaleType="centerCrop"
+                android:backgroundTint="@color/bg_mode"
+                android:contentDescription="Eraser"
+                android:src="@drawable/eraser2" />
+            <!-- Add more image buttons for other brush types here -->
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Brush Size" />
+
+        <SeekBar
+            android:id="@+id/seekBarBrushSize"
+            android:layout_width="314dp"
+            android:layout_height="match_parent"
+            android:max="100" />
+
+        <TextView
+            android:id="@+id/txtPenSize"
+            android:textColor="@color/black"
+            android:text="0 to 100"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Opacity" />
+
+        <SeekBar
+            android:id="@+id/seekBarOpacity"
+            android:layout_width="314dp"
+            android:layout_height="match_parent"
+            android:max="100" />
+        <TextView
+            android:id="@+id/txtOpacity"
+            android:textColor="@color/black"
+            android:text="0 to 100"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+       </TextView>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnApply"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/black"
+        android:text="Apply" />
+
+</LinearLayout>

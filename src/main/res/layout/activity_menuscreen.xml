@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="411dp"
+    android:layout_height="730dp"
+    android:background="@drawable/bg2"
+    tools:context=".MENUScreen">
+
+
+    <Button
+        android:id="@+id/savefilebtn"
+
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentTop="false"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginRight="100dp"
+        android:layout_marginBottom="156dp"
+        android:backgroundTint="@color/white"
+        android:contentDescription="Draw"
+        android:cursorVisible="true"
+        android:foreground="@drawable/savefile" />
+
+    <Button
+        android:id="@+id/imageButton"
+
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="false"
+        android:layout_alignParentRight="false"
+        android:layout_alignParentBottom="false"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="300dp"
+        android:backgroundTint="@color/white"
+        android:contentDescription="Draw"
+        android:cursorVisible="true"
+        android:foreground="@drawable/pencil"
+        android:onClick="showPopupMenu" />
+
+    <Button
+        android:id="@+id/settingbtn"
+
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="false"
+        android:layout_alignParentRight="false"
+        android:layout_alignParentBottom="false"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="201dp"
+        android:layout_marginTop="300dp"
+        android:backgroundTint="@color/white"
+        android:contentDescription="Draw"
+        android:cursorVisible="true"
+        android:foreground="@drawable/setting" />
+
+    <Button
+        android:id="@+id/cloudbtn"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentTop="false"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginRight="260dp"
+        android:layout_marginBottom="160dp"
+        android:backgroundTint="@color/white"
+        android:contentDescription="Draw"
+        android:cursorVisible="true"
+        android:foreground="@drawable/cloud" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="318dp"
+        android:layout_height="88dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="150dp"
+        android:background="@color/white"
+        android:fontFamily="@font/black_han_sans"
+        android:text="MENU"
+        android:textColor="@color/black"
+        android:textSize="100dp" />
+
+</RelativeLayout>
+
+

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_portrait"
+        android:title="Portrait" />
+    <item
+        android:id="@+id/menu_landscape"
+        android:title="Landscape" />
+    <item
+        android:id="@+id/menu_square"
+        android:title="Square" />
+</menu>

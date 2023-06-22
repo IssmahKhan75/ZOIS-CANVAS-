@@ -1,0 +1,44 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"
+        android:text="About Us"
+        android:textColor="@color/text_color"
+        android:background="@color/bg_mode"
+        android:textSize="40dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="This application is an mobile application made using android studio for the semester project of Software Application for Mobile Device."
+        android:textColor="@color/text_color"
+        android:background="@color/bg_mode"
+        android:textSize="30dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"
+        android:text="Developers"
+        android:textColor="@color/text_color"
+        android:background="@color/bg_mode"
+        android:textSize="40dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="256dp"
+        android:layout_height="205dp"
+        android:text="ISSMAH KHAN                                                     USWA ASIF                     AIMAN SIDDIQUI TANZILA MASOOD"
+        android:textColor="@color/text_color"
+        android:background="@color/bg_mode"
+        android:textSize="30dp" />
+</LinearLayout>
